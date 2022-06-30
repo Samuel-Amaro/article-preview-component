@@ -1,36 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="HTML5, CSS3, LAYOUT, html, css, layout, css-grid, css-flexbox, RWD, responsive web design"/>
+  <meta name="description" content="Article preview component"/>
+  <meta name="author" content="Samuel Amaro"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+  <link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="body">
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  <main class="flex-container">
+    <div class="component">
+      <aside class="component__content-side" title="Imagem drawers"></aside>
+      <article class="component__content">
+        <h1 class="title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        <p class="text">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+        <div class="profile">
+          <div class="profile__data">
+            <div class="profile__image">
+              <img src="./images/avatar-michelle.jpg" alt="image profile michelle" title="Image from profile michelle"/>
+            </div>
+            <div class="profile__information">
+              <h2 class="profile__user-name">Michelle Appleton</h2>
+              <time class="profile__date" datetime="2020-06-28 00:00:00">28 Jun 2020</time>
+            </div>
+          </div>
+          <div class="option-share">
+            <p class="option-share__text-custom">Share</p>
+            <nav class="nav-social-media">
+              <a href="#facebook" target="_blank" rel="external" class="nav-social-media__link" title="link profile on facebook">
+                <img src="./images/icon-facebook.svg" alt="icon fabebook" class="nav-social-media__icon"/>
+              </a>
+              <a href="#twitter" target="_blank" rel="external" class="nav-social-media__link" title="link profile on twitter">
+                <img src="./images/icon-twitter.svg" alt="icon twitter" class="nav-social-media__icon"/>
+              </a>
+              <a href="#pinterest" target="_blank" rel="external" class="nav-social-media__link" title="link profile on pinterest">
+                <img src="./images/icon-pinterest.svg" alt="icon pinterest" class="nav-social-media__icon"/>
+              </a>
+            </nav>
+          </div>
+          <button class="button-share" type="button">
+            <img src="./images/icon-share.svg" class="button-share__icon" alt="icone share btn" title="icon share button"/>
+          </button>
+        </div>
+      </article>
+    </div>
+  </main>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
