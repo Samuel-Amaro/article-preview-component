@@ -55,7 +55,6 @@ html{
 
 .component__content{
     background-color: white;
-    padding: 40px 30px 20px 30px;
     border-radius: 0 0 10px 10px;
 }
 
@@ -66,25 +65,32 @@ html{
     text-align: left;
     line-height: 1.5;
     margin-bottom: 15px;
+    padding: 37px 34px 0 34px;
 }
 
 .text{
     color: var(--desaturated-dark-blue);
     font-size: 13px;
     text-align: left;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 35px;
-    white-space: pre-wrap;
+    padding: 0 34px 0 34px;
+    margin-bottom: 15px;
 }
 
-.component{ width: 330px; }
+.component{ width: 325px; }
 
 
 .profile{
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
+    padding: 16px 34px 16px 34px;
+}
+
+.profile_desct{
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 0 0 10px 10px;
 }
 
 .profile__data{
@@ -110,9 +116,9 @@ html{
 }
 
 .profile__date{
-    font-size: 12px;
+    font-size: 13px;
     color: var(--grayish-blue);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .button-share{
@@ -121,4 +127,62 @@ html{
     border: none;
     padding: 8px;
     border-radius: 50%;
+    background-color: var(--light-grayish-blue);
+}
+
+.button-share:hover{
+    cursor: pointer;
+}
+
+.option-share-hidden, 
+.profile-data_hidden{
+    display: none;
+}
+
+.option-share-view{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.option-share__text-custom{
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-social-media{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-social-media__link{
+    display: block;
+    text-decoration: none;
+}
+
+.button-share_click-modifier{
+    background-color: var(--desaturated-dark-blue);
+}
+
+@keyframes click-btn {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.button-share_animation-click{
+    animation-name: click-btn;
+    animation-duration: 0.30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
 }
