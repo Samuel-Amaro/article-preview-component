@@ -25,9 +25,7 @@ html{
 
 /**PLATFORM MOBILE FIRST**/
 
-.component__image-side{
-    max-width: 100%;
-}
+.component__image-side{ max-width: 100%; }
 
 .body{ 
     min-height: 100vh;
@@ -91,6 +89,9 @@ html{
 .profile_desct{
     background-color: var(--very-dark-grayish-blue);
     border-radius: 0 0 10px 10px;
+    transition-property: background-color;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
 }
 
 .profile__data{
@@ -130,14 +131,10 @@ html{
     background-color: var(--light-grayish-blue);
 }
 
-.button-share:hover{
-    cursor: pointer;
-}
+.button-share:hover{ cursor: pointer; }
 
 .option-share-hidden, 
-.profile-data_hidden{
-    display: none;
-}
+.profile-data_hidden{ display: none; }
 
 .option-share-view{
     display: flex;
@@ -166,9 +163,7 @@ html{
     text-decoration: none;
 }
 
-.button-share_click-modifier{
-    background-color: var(--desaturated-dark-blue);
-}
+.button-share_click-modifier{ background-color: var(--desaturated-dark-blue); }
 
 @keyframes click-btn {
     0%{
@@ -185,4 +180,70 @@ html{
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-direction: normal;
+}
+
+/**BREAKPOINT 375px**/
+@media screen and (max-width: 370px) {
+    .component{ 
+        width: auto;
+        margin: 0 18px; 
+    }
+    .component__content-side{
+        object-fit: contain;
+        background-position: center top;
+    }
+
+    .profile__data,
+    .option-share-view,
+    .nav-social-media { 
+        flex-flow: row wrap; 
+    }
+
+    .title{ padding: 20px 20px 0 20px; }
+
+    .text{ padding: 0 20px 0 20px; }
+}
+
+/**BREAKPOINT 1000px**/
+@media screen and (min-width: 1000px){
+    .component{
+        width: auto;
+        display: grid;
+        grid-template-columns: 300px 440px;
+    }
+
+    .title{
+        font-size: 1.5rem;
+        padding: 0;
+        width: auto;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .text{
+        padding: 0;
+        width: auto;
+        margin-bottom: 18px;
+    }
+
+    .profile{ padding: 0; }
+
+    .component__content{ 
+        padding: 35px 40px 30px 40px;
+        border-radius: 0 10px 10px 0; 
+    }
+
+    .component__img{
+        /*max-width: 100%;*/
+        min-height: 100%;
+        height: 100%;
+        width: 122%;
+        object-fit: cover;
+    }
+    
+    .component__content-side{
+        background-image: none;
+        height: auto;
+        width: auto;
+    }
 }

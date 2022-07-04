@@ -5,7 +5,10 @@ let optionShare = document.querySelector(".option-share-hidden");
 let profile = document.querySelector(".profile");
 
 btn.addEventListener("click", (event) => {
-    if(!dataProfile.classList.contains("profile-data_hidden") && optionShare.classList.contains("option-share-hidden")) {
+    //width and height not scroll
+    let contentWidth = document.documentElement.clientWidth;
+    let contentHeight = document.documentElement.clientHeight;
+    if(contentWidth <= 1000 && !dataProfile.classList.contains("profile-data_hidden") && optionShare.classList.contains("option-share-hidden")) { 
         dataProfile.classList.add("profile-data_hidden");
         profile.classList.add("profile_desct");
         optionShare.classList.remove("option-share-hidden");
