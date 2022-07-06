@@ -263,19 +263,20 @@ html{
         flex-flow: row nowrap;
         align-items: center;
         gap: 15px;
-        padding: 15px 35px;
+        padding: 18px 35px 15px 35px;
         border-radius: 8px;
         z-index: 1;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2); 
     }
 
     .option-share-view::after{
         content: " ";
         display: block;
         position: absolute;
-        top: 52px;
-        left: 105px;
+        top: 55px;
+        left: 110px;
         border-left: 12px solid transparent;
         border-top: 12px solid var(--very-dark-grayish-blue);
-        border-right: 12px solid transparent;        
+        border-right: 12px solid transparent;       
     }
 }
