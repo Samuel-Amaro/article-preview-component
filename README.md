@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repository Project](https://github.com/Samuel-Amaro/article-preview-component)
+- Live Site URL: [Result Live](https://samuel-amaro.github.io/article-preview-component/)
 
 ## My process
 
@@ -49,6 +49,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- RWD(Responsive Web Design)
 - JavaScript programming language
 - Media Querys CSS
 - DOM JS
