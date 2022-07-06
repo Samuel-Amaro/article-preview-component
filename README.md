@@ -1,5 +1,19 @@
 # Frontend Mentor - Article preview component solution
 
+[![GitHub forks](https://img.shields.io/github/forks/Samuel-Amaro/article-preview-component?style=plastic)](https://github.com/Samuel-Amaro/article-preview-component/network)
+[![GitHub stars](https://img.shields.io/github/stars/Samuel-Amaro/article-preview-component?style=plastic)](https://github.com/Samuel-Amaro/article-preview-component/stargazers)
+![GitHub language count](https://img.shields.io/github/languages/count/samuel-amaro/article-preview-component?style=plastic)
+![W3C Validation](https://img.shields.io/w3c-validation/html?style=plastic&targetUrl=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%23file)
+![GitHub repo size](https://img.shields.io/github/repo-size/samuel-amaro/article-preview-component?style=plastic)
+
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS válido!" />
+    </a>
+</p>
+
 This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
